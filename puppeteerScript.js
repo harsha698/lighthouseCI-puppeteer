@@ -28,7 +28,6 @@ async function doLogin(page) {
     console.log(`Login is successful`)
 }
 
-
 async function setup(browser, context) {
     // launch browser for LHCI
     const page = await browser.newPage();
@@ -41,11 +40,8 @@ async function setup(browser, context) {
         await page.goto(context.url);
     }
     // close session for next run
-    console.log(`Closing page`)
     await page.close();
-    console.log(`page closed`)
     counter++
-    console.log(`counter incremented`)
 }
 
 module.exports = setup

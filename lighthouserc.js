@@ -1,7 +1,7 @@
 module.exports = {
     ci: {
         collect: {
-            puppeteerScript: './src/setup.js',
+            puppeteerScript: './puppeteerScript.js',
             puppeteerLaunchOptions: {args: ['--allow-no-sandbox-job', '--allow-sandbox-debugging', '--no-sandbox', '--disable-gpu', '--disable-gpu-sandbox', '--display']}, //https://www.puppeteersharp.com/api/PuppeteerSharp.LaunchOptions.html
             numberOfRuns: 1,
             headful: false,

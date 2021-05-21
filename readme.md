@@ -22,9 +22,9 @@ Lighthouse takes `puppeteerScript` as config. Via this script we simulate a user
 ### Overall Flow
 - In `npm run audit` script, we are triggering a command as `npx lhci autorun` which triggers `lighthouserc.js` file
 - `lighthouserc.js` file hold all the values require for lighthouse ci to run.
-- `setup.js` file is a puppeteer script which launches the browser, lhci will run the script for url1 for run1 then url2 for run1 and so on.
+- `puppeteerScript.js` file is a puppeteer script which launches the browser, lhci will run the script for url1 for run1 then url2 for run1 and so on.
 - For test purpose noOfRuns is set to 1.
-- Counter is used in `setup.js` file so that login should happen once followed by auditing of all the urls.
+- Counter is used in `puppeteerScript.js` file so that login should happen once followed by auditing of all the urls.
 
 ### Report
 - As lighthouse audit the pages, it generates reports for 4 metrics - performance, accessibility,  best-practices, seo and pwa and stores in `lhci_reports` folder.
@@ -40,7 +40,7 @@ Lighthouse takes `puppeteerScript` as config. Via this script we simulate a user
 ### Prerequisites
 - LHCI server should be up and running. It can be hosted on AWS or locally
 
-### How to setup LHCI server locally?
+### How to puppeteerScript LHCI server locally?
 - Start docker demon
 - Can be done via heroku as well. However that requires heroku to be installed on machine. So used docker-compose.
 - Create a docker-compose.yaml file inside lighthouse folder with below content:
