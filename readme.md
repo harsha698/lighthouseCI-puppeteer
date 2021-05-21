@@ -59,18 +59,17 @@ volumes:
 - Run command as `docker-compose up -d`
 - Open browser and launch a url as `localhost:9001`. Ensure that no other process should run on this port. Else one should replace the port number in docker-compose file.
 - Open terminal window.
-- cd to this repo and folder lighthouse.
 - Run below set of commands:
 ```
 $ lhci wizard
 ? Which wizard do you want to run? new-project
 ? What is the URL of your LHCI server? http://localhost:9001/
-? What would you like to name the project? lighthouse-ci-choicemax
-Where is the project's code hosted? https://bitbucket.org/ideasorg/ui-performance/src/master/
+? What would you like to name the project? lighthouse-ci
+Where is the project's code hosted? https://github.com/harsha698/lighthouseCI-puppeteer
 ```
 - Output would be something like below:
 ```
-Created project lighthouse-ci-choicemax (XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)!
+Created project lighthouse-ci (XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)!
 Use build token XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX to connect.
 Use admin token XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX to manage the project.
 ```
